@@ -57,6 +57,20 @@ So here comes the “Notepads” 🎉 (s stands for Sets).
 * You cannot associate potentially harmful file types (.cmd, .bat etc.) with Notepads.
 * Notepads does not work well with large files; the file size limit is set to 1MB for now. I will add large file support later.
 
+## Ubuntu
+
+Notepads can be built as a native Ubuntu desktop application using the same
+source, XAML, assets, and functionality as the original app. Install the .NET
+8 SDK and GTK runtime dependencies, then build and run the Ubuntu solution:
+
+```bash
+dotnet build src/Notepads.Ubuntu.sln -c Release
+dotnet run --project src/Notepads.Ubuntu/Notepads.Ubuntu.csproj -c Release
+```
+
+The desktop-entry installation notes are in
+[`packaging/ubuntu/README.md`](packaging/ubuntu/README.md).
+
 ## Downloads:
 
 Notepads is available in the Microsoft Store. You can get the latest version of Notepads here for free: [Microsoft Store Link](https://www.microsoft.com/store/apps/9nhl4nsc67wm).
