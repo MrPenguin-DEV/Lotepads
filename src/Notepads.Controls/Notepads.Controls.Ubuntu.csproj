@@ -6,10 +6,9 @@
     <RootNamespace>Notepads.Controls</RootNamespace>
     <AssemblyName>Notepads.Controls</AssemblyName>
     <EnableDefaultItems>false</EnableDefaultItems>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="**\*.cs" Exclude="bin\**;obj\**;bin/**;obj/**" />
+    <Compile Include="**\*.cs" Exclude="bin\**;obj\**" />
     <Page Include="**\*.xaml" Exclude="bin\**;obj\**" />
     <Content Include="Properties\Notepads.Controls.rd.xml" />
   </ItemGroup>
