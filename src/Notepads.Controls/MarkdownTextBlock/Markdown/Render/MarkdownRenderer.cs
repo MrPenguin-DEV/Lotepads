@@ -210,7 +210,7 @@ namespace Notepads.Controls.Markdown
                 return;
             }
 
-            var rootViewer = DependencyObjectExtensions.FindAscendant<ScrollViewer>(RootElement);
+            var rootViewer = RootElement.FindParent<ScrollViewer>();
             if (rootViewer != null)
             {
                 pointerWheelChanged?.Invoke(rootViewer, new object[] { e });

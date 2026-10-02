@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- The controls and XAML are shared with the original application. -->
+    <TargetFramework>net8.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Notepads.Controls</RootNamespace>
+    <AssemblyName>Notepads.Controls</AssemblyName>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="**\*.cs" Exclude="bin\**;obj\**;bin/**;obj/**" />
+    <Page Include="**\*.xaml" Exclude="bin\**;obj\**" />
+    <Content Include="Properties\Notepads.Controls.rd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Uno.UI" Version="5.5.37" />
+    <PackageReference Include="Uno.UI.Runtime.Skia.Gtk" Version="5.5.37" />
+  </ItemGroup>
+</Project>
